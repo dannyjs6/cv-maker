@@ -1,3 +1,5 @@
+import { StartResumeButton } from "@/components/home/StartResumeButton";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen items-center justify-center bg-zinc-50 px-6 py-24 text-zinc-950 dark:bg-zinc-950 dark:text-zinc-50">
@@ -6,32 +8,14 @@ export default function Home() {
           CV Maker
         </p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight">
-          Next.js, TypeScript, Tailwind, and Prisma are ready.
+          Build a professional CV step by step.
         </h1>
         <p className="mt-4 max-w-2xl text-base leading-7 text-zinc-600 dark:text-zinc-400">
-          Update <code>app/page.tsx</code>, set <code>DATABASE_URL</code> in{" "}
-          <code>.env</code>, and run your first migration when you are ready to
-          define application data.
+          Start from scratch, add your contact details, work history,
+          education, skills, and summary, then finalize your resume.
         </p>
-        <div className="mt-8 grid gap-4 sm:grid-cols-3">
-          <div className="rounded-xl border border-zinc-200 p-4 dark:border-zinc-800">
-            <p className="text-sm font-medium">Start dev server</p>
-            <code className="mt-2 block text-sm text-zinc-600 dark:text-zinc-400">
-              npm run dev
-            </code>
-          </div>
-          <div className="rounded-xl border border-zinc-200 p-4 dark:border-zinc-800">
-            <p className="text-sm font-medium">Create migration</p>
-            <code className="mt-2 block text-sm text-zinc-600 dark:text-zinc-400">
-              npm run prisma:migrate
-            </code>
-          </div>
-          <div className="rounded-xl border border-zinc-200 p-4 dark:border-zinc-800">
-            <p className="text-sm font-medium">Open Prisma Studio</p>
-            <code className="mt-2 block text-sm text-zinc-600 dark:text-zinc-400">
-              npm run prisma:studio
-            </code>
-          </div>
+        <div className="mt-8">
+          <StartResumeButton />
         </div>
       </div>
     </main>
